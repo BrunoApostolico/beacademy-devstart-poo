@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-class Validar
+abstract class Validar
 {
     public static function validarCpf(string $cpf): void
     {
-     if (strlen($cpf) !== 11){
-         die("Ops, CPF inválido");
+         if (strlen($cpf) !== 11){
+             die("Ops, CPF inválido");
      }
     }
 }
