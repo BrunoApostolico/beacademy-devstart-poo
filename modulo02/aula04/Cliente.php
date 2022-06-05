@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-class Cliente extends Usuario
+final class Cliente extends Usuario //Classe final não permite herança
 {
     private string $dataCadastro;
 

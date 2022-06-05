@@ -1,6 +1,6 @@
 <?php
 
-class Usuario
+abstract class Usuario //Classe abstrata só serve de modelo
 {
     private string $nome;
     private string $email;
