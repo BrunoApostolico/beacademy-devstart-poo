@@ -4,9 +4,21 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-class CategoryController{
-    public function indexAction(): void
+class CategoryController extends AbstractController
+{
+    public function listAction(): void
     {
-        echo 'Olá Mundo! Estou dentro de uma action, dentro da CategoryController';
+        parent::render('category/list');
     }
+
+    public function addAction():void
+    {
+        parent::render('category/add');
+    }
+
+    public function editAction():void
+    {
+        parent::render('category/edit');
+    }
+
 }
